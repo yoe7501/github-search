@@ -3,7 +3,6 @@ import DevInfo from "./DevInfo";
 import BottomLinks from "./BottomLinks";
 import FollowCount from "./FollowCount";
 import { GithubAccount } from "../page";
-import Image from "next/image";
 
 interface Props{
     user: GithubAccount;
@@ -12,18 +11,18 @@ interface Props{
 const InnerCard = ({user} : Props) => {
   return (
     <div className="inner ">
-      <Image
+      <img
         className="rounded-full size-20 hidden md:block"
         src={user.avatar_url}
-        alt="cat photo"
+        alt="Avator Photo"
       />
       <div className="flex flex-col gap-5">
     
         <div className="flex flex-row gap-4">
-          <Image
+          <img
             className="rounded-full size-20 block md:hidden"
             src={user.avatar_url}
-            alt="cat photo"
+            alt="Avator Photo"
           />
           <DevInfo user={user}/>
         </div>

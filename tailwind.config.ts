@@ -9,11 +9,16 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        backGround: 'rgba(var(--backGround))',
+        card: 'rgba(var(--card))',
+        font: 'rgba(var(--font))',
+        innerCard: 'rgba(var(--innerCard))',
+        search: 'rgba(var(--search))',
+        icon: 'rgba(var(--icon))',
       },
     },
   },
   plugins: [],
 };
 export default config;
+

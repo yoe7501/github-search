@@ -1,0 +1,28 @@
+.big {
+    @apply flex justify-center items-center h-screen
+}
+.card{
+    @apply flex flex-col min-w-[320px] gap-4 max-w-[573px] m-20
+}
+.top {
+    @apply flex flex-row items-center justify-between 
+}
+.search{
+    @apply flex flex-row justify-between bg-card h-12 rounded-lg
+}
+
+.inner{
+    @apply flex flex-col md:flex-row justify-between bg-card  rounded-lg p-5 gap-5 
+}
+
+.button{
+    @apply bg-search rounded-lg w-20 m-2 text-white
+}
+
+.link{
+    @apply flex flex-row gap-3
+}
+
+.link-group{
+    @apply flex flex-col sm:flex-row justify-between
+}
